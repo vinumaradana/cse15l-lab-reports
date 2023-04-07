@@ -2,9 +2,9 @@
 ## MyName
 *Vinu* 
 **Hola**
-[Link]([http://a.com](https://ucsd-cse15l-s23.github.io/week/week1/))
+[Link](https://ucsd-cse15l-s23.github.io/week/week1/))
 
-![Image](http://url/a.png](https://ucsd-cse15l-s23.github.io/images/cse15l-lab-reports-example.png)
+![Image](https://ucsd-cse15l-s23.github.io/images/cse15l-lab-reports-example.png)
 > Blockquote
 
 * List
