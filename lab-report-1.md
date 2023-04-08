@@ -16,8 +16,7 @@ I ran the following command which is specific to my cse 15l account.
 
 `$ ssh cs15lsp23ik@ieng6.ucsd.edu`
 
-Then, I received the following message to which I replied yes. 
-
+Then, I received the following message to which I replied yes.
 ```
 ⤇ ssh cs15lsp23ik@ieng6.ucsd.edu
 The authenticity of host 'ieng6.ucsd.edu (128.54.70.227)' can't be established.
