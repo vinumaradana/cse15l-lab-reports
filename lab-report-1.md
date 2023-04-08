@@ -28,4 +28,7 @@ After granting access, I typed in my password. Note that you won't see any text 
 as it is invisible. I initially ran into problems as it didn't log me in. But, after trying multiple times, 
 I successfully logged in and received the following message.
 
+![Image](log-in.png)
+
 ### Step 3: Trying Some Commands
+
