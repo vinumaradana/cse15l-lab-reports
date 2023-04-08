@@ -11,4 +11,10 @@ you don't have VS code, then go to the visual studio code website and follow the
 and install it on to your computer. 
 
 ### Step 2: Remotely Connecting
+
+I ran the following command which is specific to my cse 15l account.
+
+`$ ssh cs15lsp23ik@ieng6.ucsd.edu`
+
+
 ### Step 3: Trying Some Commands
