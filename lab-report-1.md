@@ -32,4 +32,5 @@ I successfully logged in and received the following message.
 ### Step 3: Running Some Commands
 
 ![Image](commands.png)
+![Image](commands2.png)
 
