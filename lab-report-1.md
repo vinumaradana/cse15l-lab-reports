@@ -2,6 +2,7 @@
 
 ## **How to log into your course-specific account on ieng6**
 
+
 ### Step 1: Installing  VS Code 
 
 ![Image](vs_setup.png)
@@ -9,6 +10,7 @@
 I already installed VS Code to my computer prior to this lab, so I didn't have to do anything. But, if
 you don't have VS code, then go to the visual studio code website and follow the instructions to download it 
 and install it on to your computer. 
+
 
 ### Step 2: Remotely Connecting
 
@@ -29,6 +31,7 @@ I successfully logged in and received the following message.
 
 ![Image](log.png)
 
+
 ### Step 3: Running Some Commands
 
 Try running the commands cd, ls, pwd, mkdir, and cp a few times in different ways on your computer after ssh-ing 
@@ -37,5 +40,3 @@ can see below:
 
 ![Image](commands.png)
 ![Image](commands2.png)
-
-
