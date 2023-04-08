@@ -29,5 +29,7 @@ I successfully logged in and received the following message.
 
 ![Image](log.png)
 
-### Step 3: Trying Some Commands
+### Step 3: Running Some Commands
+
+
 
