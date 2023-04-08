@@ -11,6 +11,7 @@ I already installed VS Code to my computer prior to this lab, so I didn't have t
 you don't have VS code, then go to the visual studio code website and follow the instructions to download it 
 and install it on to your computer. 
 
+<br>
 
 ### Step 2: Remotely Connecting
 
@@ -31,6 +32,7 @@ I successfully logged in and received the following message.
 
 ![Image](log.png)
 
+<br>
 
 ### Step 3: Running Some Commands
 
