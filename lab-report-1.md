@@ -16,5 +16,16 @@ I ran the following command which is specific to my cse 15l account.
 
 `$ ssh cs15lsp23ik@ieng6.ucsd.edu`
 
+Then, I received the following message to which I replied yes. 
+
+```
+⤇ ssh cs15lsp23ik@ieng6.ucsd.edu
+The authenticity of host 'ieng6.ucsd.edu (128.54.70.227)' can't be established.
+RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? 
+```
+After granting access, I typed in my password. Note that you won't see any text while typing your password 
+as it is invisible. I initially ran into problems as it didn't log me in. But, after trying multiple times, 
+I successfully logged in and received the following message.
 
 ### Step 3: Trying Some Commands
