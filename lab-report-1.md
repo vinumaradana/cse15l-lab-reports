@@ -31,6 +31,11 @@ I successfully logged in and received the following message.
 
 ### Step 3: Running Some Commands
 
+Try running the commands cd, ls, pwd, mkdir, and cp a few times in different ways on your computer after ssh-ing 
+(use the terminal in VScode). I tested a few commands in various methods to understand their functionality as you
+can see below:
+
 ![Image](commands.png)
 ![Image](commands2.png)
+
 
