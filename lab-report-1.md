@@ -8,7 +8,7 @@
 ![Image](vs_setup.png)
 
 I already installed VS Code to my computer prior to this lab, so I didn't have to do anything. But, if
-you don't have VS code, then go to the visual studio code website and follow the instructions to download it 
+you don't have VS code, then go to the visual studio code website [Link](https://code.visualstudio.com) and follow the instructions to download it 
 and install it on to your computer. 
 
 <br>
