@@ -34,7 +34,7 @@ I attempted to input my password:
 
 ![Image](log-error.png)
 
-If you run into this error, make sure you're entering in your password correctly and you waited a bit after you reset your password.
+If you run into this error, make sure you're entering in your password correctly and you have waited a bit after you reset your password.
 If this error still progresses, ask for help.
 
 But, after trying multiple times and waiting for about an hour or so, I successfully logged in and received the following message.
