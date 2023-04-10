@@ -27,7 +27,7 @@ RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? 
 ```
 After granting access, I typed in my password. Note that you won't see any text while typing your password 
-as it is invisible. 
+as it is invisible for privacy and security reasons.
 
 Initially, I ran into connection errors preventing me from logging in. I received the following message every time
 I attempted to input my password:
