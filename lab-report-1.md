@@ -27,8 +27,17 @@ RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? 
 ```
 After granting access, I typed in my password. Note that you won't see any text while typing your password 
-as it is invisible. I initially ran into problems as it didn't log me in. But, after trying multiple times, 
-I successfully logged in and received the following message.
+as it is invisible. 
+
+Initially, I ran into connection errors preventing me from logging in. I received the following message every time
+I attempted to input my password:
+
+![Image](log-error.png)
+
+If you run into this error, make sure you're entering in your password correctly and you waited a bit after you reset your password.
+If this error still progresses, ask for help.
+
+But, after trying multiple times and waiting for about an hour or so, I successfully logged in and received the following message.
 
 ![Image](log.png)
 
