@@ -10,7 +10,6 @@ Reset your password following the tutorial below:
 
 [How To Reset Your CSE15L Password](https://drive.google.com/file/d/17IDZn8Qq7Q0RkYMxdiIR0o6HJ3B5YqSW/view)
 
-<br>
 
 ### Step 2: Installing  VS Code 
 
@@ -20,7 +19,6 @@ I already installed VS Code to my computer prior to this lab, so I didn't have t
 you don't have VS code, then go to the [Visual Studio Code Website](https://code.visualstudio.com) and follow the instructions to download it 
 and install it on to your computer. 
 
-<br>
 
 ### Step 3: Remotely Connecting
 
@@ -50,7 +48,6 @@ But, after trying multiple times and waiting for about an hour or so, I successf
 
 ![Image](log.png)
 
-<br>
 
 ### Step 4: Running Some Commands
 
