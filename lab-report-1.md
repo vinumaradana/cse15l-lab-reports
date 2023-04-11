@@ -6,10 +6,7 @@
 
 Look up your course-specific account [here](https://sdacs.ucsd.edu/~icc/index.php).
 
-Reset your password following the tutorial below:
-
-[How To Reset Your CSE15L Password](https://drive.google.com/file/d/17IDZn8Qq7Q0RkYMxdiIR0o6HJ3B5YqSW/view)
-
+Reset your password following the tutorial below: [How To Reset Your CSE15L Password](https://drive.google.com/file/d/17IDZn8Qq7Q0RkYMxdiIR0o6HJ3B5YqSW/view)
 
 ### Step 2: Installing  VS Code 
 
