@@ -2,8 +2,16 @@
 
 ## **How to log into your course-specific account on ieng6**
 
+### Step 1: Your CSE15L Account
 
-### Step 1: Installing  VS Code 
+Look up your course-specific account [here](https://sdacs.ucsd.edu/~icc/index.php).
+
+Reset your password following the tutorial below:
+
+[How To Reset Your CSE15L Password](https://drive.google.com/file/d/17IDZn8Qq7Q0RkYMxdiIR0o6HJ3B5YqSW/view)
+
+
+### Step 2: Installing  VS Code 
 
 ![Image](vs_setup.png)
 
@@ -13,7 +21,7 @@ and install it on to your computer.
 
 <br>
 
-### Step 2: Remotely Connecting
+### Step 3: Remotely Connecting
 
 I ran the following command which is specific to my cse 15l account.
 
@@ -43,7 +51,7 @@ But, after trying multiple times and waiting for about an hour or so, I successf
 
 <br>
 
-### Step 3: Running Some Commands
+### Step 4: Running Some Commands
 
 Try running the commands cd, ls, pwd, mkdir, and cp a few times in different ways on your computer after ssh-ing 
 (use the terminal in VScode). I tested a few commands in various methods to understand their functionality as you
