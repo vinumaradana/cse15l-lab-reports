@@ -50,7 +50,7 @@ or using the Ctrl + D keyboard shortcut.
 
 ### Step 4: Running Some Commands
 
-Try running the commands cd, ls, pwd, mkdir, and cp, whose definitions are below, a few times in different ways on your computer after ssh-ing 
+Try running the commands `cd`, `ls`, `pwd`, `mkdir`, and `cp`, whose definitions are below, a few times in different ways on your computer after ssh-ing 
 (use the terminal in VScode).
 
 * `cd` changes the name of the current directory
