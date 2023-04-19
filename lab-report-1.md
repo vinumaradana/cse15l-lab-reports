@@ -50,7 +50,7 @@ or using the Ctrl + D keyboard shortcut.
 
 ### Step 4: Running Some Commands
 
-Try running the commands `cd`, `ls`, `pwd`, `mkdir`, and `cp`, whose definitions are below, a few times in different ways on your computer after ssh-ing 
+Try running the commands `cd`, `ls`, `pwd`, `mkdir`, `cp` and `cat`, whose definitions are below, a few times in different ways on your computer after ssh-ing 
 (use the terminal in VScode).
 
 * `cd` changes the name of the current directory
@@ -62,6 +62,8 @@ Try running the commands `cd`, `ls`, `pwd`, `mkdir`, and `cp`, whose definitions
 * `mkdir` creates new folder(s) if they do not exist
 
 * `cp` copies one or more files to another location
+
+* `cat` concatenate (merge) and print (display) the files 
 
 I tested a few commands in various methods to understand their functionality as you
 can see below:
