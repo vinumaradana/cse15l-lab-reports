@@ -53,15 +53,15 @@ or using the Ctrl + D keyboard shortcut.
 Try running the commands cd, ls, pwd, mkdir, and cp, whose definitions are below, a few times in different ways on your computer after ssh-ing 
 (use the terminal in VScode).
 
-`cd` changes the name of the current directory
+* `cd` changes the name of the current directory
 
-`ls` lists information about the files
+* `ls` lists information about the files
 
-`pwd` prints the name of the current working directory
+* `pwd` prints the name of the current working directory
 
-`mkdir` creates new folder(s) if they do not exist
+* `mkdir` creates new folder(s) if they do not exist
 
-`cp` copies one or more files to another location
+* `cp` copies one or more files to another location
 
 I tested a few commands in various methods to understand their functionality as you
 can see below:
