@@ -41,7 +41,8 @@ I attempted to input my password:
 If you run into this error, make sure you're entering in your password correctly and you have waited a bit after you reset your password.
 If this error still progresses, ask for help.
 
-But, after trying multiple times and waiting for about an hour or so, I successfully logged in and received the following message.
+But, after trying multiple times and waiting for about an hour or so, I successfully logged in and received the following message. I opened a 
+new terminal in VS Code by using the Ctrl + ` keyboard shortcut. 
 
 ![Image](log.png)
 
@@ -49,7 +50,9 @@ But, after trying multiple times and waiting for about an hour or so, I successf
 ### Step 4: Running Some Commands
 
 Try running the commands cd, ls, pwd, mkdir, and cp a few times in different ways on your computer after ssh-ing 
-(use the terminal in VScode). I tested a few commands in various methods to understand their functionality as you
+(use the terminal in VScode).
+
+I tested a few commands in various methods to understand their functionality as you
 can see below:
 
 ![Image](commands.png)
