@@ -15,8 +15,7 @@ import java.io.IOException;
 import java.net.URI;
 
 class Handler implements URLHandler {
-    // The one bit of state on the server: a number that will be manipulated by
-    // various requests.
+    // A string that will be manipulated by various requests.
     String output = "";
 
     public String handleRequest(URI url) {
@@ -45,5 +44,6 @@ class StringServer {
 ```
 
 After writing the code for StringServer, I altered the path to check that code produced the expected output.
+
 
 
