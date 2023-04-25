@@ -44,10 +44,7 @@ class StringServer {
 ```
 
 After writing the code for StringServer, I altered the path to check that code produced the expected output as you can
-see in the following snap shots.
-
-
-For each of the two screenshots, describe:
+see in the following screenshots.
 
 - Which methods in your code are called?
 - What are the relevant arguments to those methods, and the values of any relevant fields of the class?
@@ -56,6 +53,7 @@ For each of the two screenshots, describe:
 By values, we mean specific Strings, ints, URIs, and so on. "abc" is a value, 456 is a value, new URI("http://...") is a value, and so on.)
 
 ![Image](sserver1.png)
+- The main and the 
 ![Image](sserver2.png)
 
 ### Part 2: Bugs
@@ -88,19 +86,18 @@ To identify a failure-inducing input for the buggy program, I examined the logic
 The following is part of an example of an input that doesn’t induce a failure:
 
 ```
-    double [] input = {2.0, 8.0, 10.0, 4.0};
+    double [] input = {2.0, 8.0, 10.0, 6.0};
 ```
 
 The J-Unit test with both the inputs is the following:
 ```
  @Test
   public void averageWithoutLowest() {
-    double[] failureInducingInput = {8.0, 6.0, 10.0, 6.0};
-    double [] input = {2.0, 8.0, 10.0, 4.0};
+    double [] failureInducingInput = {8.0, 6.0, 10.0, 6.0};
+    double [] input = {2.0, 8.0, 10.0, 6.0};
     assertEquals(8.0, ArrayExamples.averageWithoutLowest(failureInducingInput), 1e-15);
-    assertEquals(6.0, ArrayExamples.averageWithoutLowest(input), 1e-15);
-
-  }
+    assertEquals(8.0, ArrayExamples.averageWithoutLowest(input), 1e-15);
+  } 
 ```
 
 Next, I found the symptom or the output of running the tests by running the following commands in the terminal of my VS code.
@@ -113,9 +110,50 @@ local $ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runn
 The symptom of the averageWithoutLowest method can be seen below:
 ![Image](symptom.png)
 
-The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown)
-Briefly describe why the fix addresses the issue.
+The bug in this method averageWithoutLowest is that it doesn't account for repeated numbers in the inputted array. Specifically, in the first test where we used the failure-inducing input, 6.0 is left out twice while calculating the mean of the numbers in the array. 
+
+To fix the bug, you have to change the code. The following code blocks are the before-and-after code change.
+
+Before:
+```
+static double averageWithoutLowest(double[] arr) {
+    if(arr.length < 2) { return 0.0; }
+    double lowest = arr[0];
+    for(double num: arr) {
+      if(num < lowest) { lowest = num; }
+    }
+    double sum = 0;
+    for(double num: arr) {
+      if(num != lowest) { sum += num; }
+    }
+    return sum / (arr.length - 1);
+ }
+```
+
+After:
+```
+  static double averageWithoutLowest(double[] arr) {
+    if(arr.length < 2) { return 0.0; }
+    double lowest = arr[0];
+    int lowestIndex = 0;
+    for(int i = 0; i < arr.length; i++) {
+      if(arr[i] < lowest) { 
+        lowest = arr[i];
+        lowestIndex = i;
+      }
+    }
+    double sum = 0;
+    for(int i = 0; i < arr.length; i++) {
+      if(i != lowestIndex) { sum += arr[i]; }
+    }
+    return sum / (arr.length - 1);
+  }
+```
+The result of running the tests on the fixed code is the following:
+![Image](symptom2.png)
+
+This fix addresses this issue by finding the first index of the lowest number in the array and ommitting the number at that index while finding the sum of all the numbers except the lowest in the array. This addresses the bug by assuring that the 
+code doesn't leave out the lowest number multiple times while calculating the averageWithoutLowest value. 
 
 ### Part 3: Reflection
-In a couple of sentences, describe something you learned from lab in week 2 or 3 that you didn’t know before.
-
+In week 2, I learned about different parts of a URL, which I use every single day but never knew what it truly means, and applied my knowledge while learning how to run and build a servers. In week 3, I learned an important skill in programming, whic is identifying bugs using failure-inducing inputs and their corresponding symptoms, and practiced it througout the lab.
