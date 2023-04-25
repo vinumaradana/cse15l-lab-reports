@@ -43,7 +43,7 @@ If this error still progresses, ask for help.
 
 But, after trying multiple times and waiting for about an hour or so, I successfully logged in and received the following message. Note: You can open a 
 new terminal in VS Code by using the Ctrl + backtick keyboard shortcut. And, you can log out of the remote server in your terminal by running the command `exit`
-or using the Ctrl + D keyboard shortcut.
+or using the Ctrl + C keyboard shortcut.
 
 ![Image](log.png)
 
