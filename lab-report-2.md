@@ -43,7 +43,7 @@ class StringServer {
 }
 ```
 
-After writing the code for StringServer, I altered the path to check that code produced the expected output as you can
+After writing the code for StringServer, I altered the path to check that the code produced the expected output as you can
 see in the following screenshots.
 
 **Screenshot 1**
