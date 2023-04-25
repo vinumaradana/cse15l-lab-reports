@@ -43,7 +43,12 @@ class StringServer {
 }
 ```
 
-After writing the code for StringServer, I altered the path to check that code produced the expected output.
+After writing the code for StringServer, I altered the path to check that code produced the expected output as you can
+see in the following snap shots.
+
+
+![Image](server1.png)
+![Image](server2.png)
 
 
 
