@@ -3,6 +3,8 @@
 ### Part 1: Creating a Web Server
 
 Write a web server called StringServer that supports the path and behavior described below. It should keep track of a 
-single string that gets added to by incoming requests. 
+single string that gets added to by incoming requests. The requests should like th
+
+`/add-message?s=<string>`
 
 
