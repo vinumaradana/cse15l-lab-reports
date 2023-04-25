@@ -150,7 +150,7 @@ After:
   }
 ```
 The result of running the tests on the fixed code is the following:
-![Image](symptom2.png)
+![Image](symptom3.png)
 
 This fix addresses this issue by finding the first index of the lowest number in the array and ommitting the number at that index while finding the sum of all the numbers except the lowest in the array. This addresses the bug by assuring that the 
 code doesn't leave out the lowest number multiple times while calculating the averageWithoutLowest value. 
