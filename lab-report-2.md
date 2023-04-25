@@ -46,15 +46,22 @@ class StringServer {
 After writing the code for StringServer, I altered the path to check that code produced the expected output as you can
 see in the following screenshots.
 
-- Which methods in your code are called?
-- What are the relevant arguments to those methods, and the values of any relevant fields of the class?
-- How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
-
-By values, we mean specific Strings, ints, URIs, and so on. "abc" is a value, 456 is a value, new URI("http://...") is a value, and so on.)
-
+Screenshot 1
 ![Image](sserver1.png)
-- The main and the 
+- The main and the handleRequest methods were called
+- The argument for the main was 4000, which was the port number, and argument for handleRequest was the url 
+"http://localhost:4000/add-message?s=Hello%20World!"
+- The value of the field `output` was initially `""`
+- But, after the specific request the value of the `output` is `"Hello World! \n"`
+
+Screenshot 2
 ![Image](sserver2.png)
+- The main and the handleRequest methods were called
+- The argument for the main was 4000, which was the port number, and argument for handleRequest was the url
+ "http://localhost:4000/add-message?s=How%20are%20you"
+- The value of the field `output` was initially `"Hello World! \n"`
+- But, after the specific request the value of the `output` is `"Hello World! \n How are you \n"`
+
 
 ### Part 2: Bugs
 For this part, I chose the averageWithoutLowest method in ArrayExamples.java file in lab 3, whose code is listed below.  
