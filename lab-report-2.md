@@ -47,8 +47,8 @@ After writing the code for StringServer, I altered the path to check that code p
 see in the following snap shots.
 
 
-![Image](server1.png)
-![Image](server2.png)
+![Image](sserver1.png)
+![Image](sserver2.png)
 
 
 
