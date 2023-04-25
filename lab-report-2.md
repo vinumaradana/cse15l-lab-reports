@@ -63,7 +63,7 @@ see in the following screenshots.
 - But, after the specific request, the value of the `output` is `"Hello World! \n How are you \n"`
 
 
-### Part 2: Bugs
+### Part 2: Identifying Bugs
 For this part, I chose the `averageWithoutLowest` method in `ArrayExamples.java` file in lab 3, whose code is listed below.  
 
 ```
