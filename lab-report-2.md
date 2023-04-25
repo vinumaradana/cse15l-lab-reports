@@ -159,7 +159,7 @@ static double averageWithoutLowest(double[] arr) {
 The result of running the tests on the fixed code is the following:
 ![Image](symptom3.png)
 
-This code fix addresses this issue by finding the first index of the lowest number in the array and ommitting the number at that index while calculating the sum of all the numbers except the lowest in the array. This addresses the bug by assuring that the lowest number doesn't get left out multiple times while calculating the `averageWithoutLowest` value. 
+This fixed code addresses this issue by finding the first index of the lowest number in the array and ommitting the number at that index while calculating the sum of all the numbers except the lowest in the array. This addresses the bug by assuring that the lowest number doesn't get left out multiple times while calculating the `averageWithoutLowest` value. 
 
 ### Part 3: Reflection
 In week 2, I learned about different parts of a URL, which I use every single day but never knew what it truly means, and applied my knowledge while learning how to run and build a servers. In week 3, I learned an important skill in programming, which is identifying bugs using failure-inducing inputs and their corresponding symptoms and fixing the bugs in a program.
