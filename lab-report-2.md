@@ -59,13 +59,60 @@ By values, we mean specific Strings, ints, URIs, and so on. "abc" is a value, 45
 ![Image](sserver2.png)
 
 ### Part 2: Bugs
-Choose one of the bugs from lab 3.
+For this part, I chose the averageWithoutLowest method in ArrayExamples.java file in lab 3, whose code is listed below.  
 
-Provide:
+```
+  // Averages the numbers in the array (takes the mean), but leaves out the
+  // lowest number when calculating. Returns 0 if there are no elements or just
+  // 1 element in the array
+  static double averageWithoutLowest(double[] arr) {
+    if(arr.length < 2) { return 0.0; }
+    double lowest = arr[0];
+    for(double num: arr) {
+      if(num < lowest) { lowest = num; }
+    }
+    double sum = 0;
+    for(double num: arr) {
+      if(num != lowest) { sum += num; }
+    }
+    return sum / (arr.length - 1);
+  }
+```
 
-A failure-inducing input for the buggy program, as a JUnit test and any associated code (write it as a code block in Markdown)
-An input that doesn’t induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown)
-The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above)
+To identify a failure-inducing input for the buggy program, I examined the logic of the code and brainstormed a test that will produce an error message and reveal the bug of the program. The following is a part of an example of a failure-inducing input from ArrayTests.java:
+
+```
+    double[] failureInducingInput = {8.0, 6.0, 10.0, 6.0};
+```
+
+The following is part of an example of an input that doesn’t induce a failure:
+
+```
+    double [] input = {2.0, 8.0, 10.0, 4.0};
+```
+
+The J-Unit test with both the inputs is the following:
+```
+ @Test
+  public void averageWithoutLowest() {
+    double[] failureInducingInput = {8.0, 6.0, 10.0, 6.0};
+    double [] input = {2.0, 8.0, 10.0, 4.0};
+    assertEquals(8.0, ArrayExamples.averageWithoutLowest(failureInducingInput), 1e-15);
+    assertEquals(6.0, ArrayExamples.averageWithoutLowest(input), 1e-15);
+
+  }
+```
+
+Next, I found the symptom or the output of running the tests by running the following commands in the terminal of my VS code.
+
+```
+local $ javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
+local $ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ArrayTests
+```
+
+The symptom of the averageWithoutLowest method can be seen below:
+![Image](symptom.png)
+
 The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown)
 Briefly describe why the fix addresses the issue.
 
