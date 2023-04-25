@@ -3,7 +3,7 @@
 ### Part 1: Creating a Web Server
 
 Write a web server called StringServer that supports the path and behavior described below. It should keep track of a 
-single string that gets added to by incoming requests. The requests should like th
+single string that gets added to by incoming requests. The requests should look like this:
 
 `/add-message?s=<string>`
 
@@ -46,7 +46,7 @@ class StringServer {
 After writing the code for StringServer, I altered the path to check that code produced the expected output as you can
 see in the following screenshots.
 
-Screenshot 1
+**Screenshot 1**
 ![Image](sserver1.png)
 - The main and the handleRequest methods were called
 - The argument for the main was `4000`, which was the port number, and argument for handleRequest was the url 
@@ -54,7 +54,7 @@ Screenshot 1
 - The value of the field `output` was initially `""`
 - But, after the specific request the value of the `output` is `"Hello World! \n"`
 
-Screenshot 2
+**Screenshot 2**
 ![Image](sserver2.png)
 - The main and the handleRequest methods were called
 - The argument for the main was `4000`, which was the port number, and argument for handleRequest was the url
@@ -64,7 +64,7 @@ Screenshot 2
 
 
 ### Part 2: Bugs
-For this part, I chose the averageWithoutLowest method in ArrayExamples.java file in lab 3, whose code is listed below.  
+For this part, I chose the `averageWithoutLowest` method in `ArrayExamples.java` file in lab 3, whose code is listed below.  
 
 ```
   // Averages the numbers in the array (takes the mean), but leaves out the
@@ -84,7 +84,7 @@ For this part, I chose the averageWithoutLowest method in ArrayExamples.java fil
   }
 ```
 
-To identify a failure-inducing input for the buggy program, I examined the logic of the code and brainstormed a test that will produce an error message and reveal the bug of the program. The following is a part of an example of a failure-inducing input from ArrayTests.java:
+To identify a failure-inducing input for the buggy program, I examined the logic of the code and brainstormed a test that will produce an error message and reveal the bug of the program. The following is a part of an example of a **failure-inducing input** from `ArrayTests.java`:
 
 ```
     double[] failureInducingInput = {8.0, 6.0, 10.0, 6.0};
@@ -96,7 +96,7 @@ The following is part of an example of an input that doesn’t induce a failure:
     double [] input = {2.0, 8.0, 10.0, 6.0};
 ```
 
-The J-Unit test with both the inputs is the following:
+The J-Unit test using both the inputs is the following:
 ```
  @Test
   public void averageWithoutLowest() {
@@ -114,14 +114,14 @@ local $ javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
 local $ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ArrayTests
 ```
 
-The symptom of the averageWithoutLowest method can be seen below:
+The symptom of the `averageWithoutLowest` method can be seen below:
 ![Image](symptom.png)
 
-The bug in this method averageWithoutLowest is that it doesn't account for repeated numbers in the inputted array. Specifically, in the first test where we used the failure-inducing input, 6.0 is left out twice while calculating the mean of the numbers in the array. 
+The bug in this method `averageWithoutLowest` is that it doesn't account for repeated numbers in the inputted array. Specifically, in the first test where we used the failure-inducing input, 6.0 is left out twice while calculating the mean of the numbers in the array. 
 
 To fix the bug, you have to change the code. The following code blocks are the before-and-after code change.
 
-Before:
+**Before:**
 ```
 static double averageWithoutLowest(double[] arr) {
     if(arr.length < 2) { return 0.0; }
@@ -137,7 +137,7 @@ static double averageWithoutLowest(double[] arr) {
  }
 ```
 
-After:
+**After:**
 ```
   static double averageWithoutLowest(double[] arr) {
     if(arr.length < 2) { return 0.0; }
@@ -159,8 +159,7 @@ After:
 The result of running the tests on the fixed code is the following:
 ![Image](symptom3.png)
 
-This fix addresses this issue by finding the first index of the lowest number in the array and ommitting the number at that index while finding the sum of all the numbers except the lowest in the array. This addresses the bug by assuring that the 
-code doesn't leave out the lowest number multiple times while calculating the averageWithoutLowest value. 
+This code fix addresses this issue by finding the first index of the lowest number in the array and ommitting the number at that index while calculating the sum of all the numbers except the lowest in the array. This addresses the bug by assuring that the lowest number doesn't get left out multiple times while calculating the `averageWithoutLowest` value. 
 
 ### Part 3: Reflection
-In week 2, I learned about different parts of a URL, which I use every single day but never knew what it truly means, and applied my knowledge while learning how to run and build a servers. In week 3, I learned an important skill in programming, whic is identifying bugs using failure-inducing inputs and their corresponding symptoms, and practiced it througout the lab.
+In week 2, I learned about different parts of a URL, which I use every single day but never knew what it truly means, and applied my knowledge while learning how to run and build a servers. In week 3, I learned an important skill in programming, which is identifying bugs using failure-inducing inputs and their corresponding symptoms and fixing the bugs in a program.
