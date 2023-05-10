@@ -82,7 +82,7 @@ The first grep command displays two lines from 1468-6708-3-1.txt file as they ma
 **Example 2**
 
 #### Cited Sources
-https://www.geeksforgeeks.org/grep-command-in-unixlinux/
+https://www.geeksforgeeks.org/grep-command-in-unixlinux/ <br>
 https://www.digitalocean.com/community/tutorials/grep-command-in-linux-unix
 
 
