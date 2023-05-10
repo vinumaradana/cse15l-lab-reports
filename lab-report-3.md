@@ -1,6 +1,6 @@
 ## **Lab Report 3**
 
-## The Grep Command
+### The Grep Command
 
 ### Basics
 The `grep` command stands for "**g**lobal search for **r**egular **e**xpression and **p**rint out". It searches a file for a particular pattern and displays all the lines that contain the pattern. The following is the syntax of the command:
