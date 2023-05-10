@@ -24,7 +24,7 @@ The `grep` command has various command-line options, but here are four important
 
 <br>
 
-1. -c option displays only a count of the lines that match a pattern
+1. **-c option** displays only a count of the lines that match a pattern
 
 **Example 1** 
 ```
@@ -42,7 +42,7 @@ There are 32 lines in 1468-6708-3-1.txt* file that matches the pattern "BMI". Th
 
 <br>
 
-2. -i option ignores case sensitivity for matching.
+2. **-i option** ignores case sensitivity for matching.
 
 **Example 1**
  ```
@@ -71,13 +71,13 @@ The first grep command displays two lines from 1468-6708-3-1.txt file as they ma
 
 <br>
 
-3. -v option displays all the lines that do not matches the pattern
+3. **-v option** displays all the lines that do not matches the pattern
 **Example 1** 
 **Example 2**
 
 <br>
 
-4. -l option displays list of file names only
+4. **-l option** displays list of file names only
 **Example 1** 
 **Example 2**
 
