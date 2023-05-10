@@ -115,7 +115,7 @@ $ grep -v "e" technical/plos/journal.pbio.0020001.txt > grep_results.txt
 $ wc grep_results.txt
       35       8     330 grep_results.txt
 ```
-The grep command with option -v displays lines that don't contain the pattern "e" from the journal.pbio.0020001.txt file. Using the wc command, we discovered that 35 lines didn't have the inputted pattern.
+The grep command with option -v displays lines that don't contain the pattern "e" from the journal.pbio.0020001.txt file. Using the wc command, we discovered that 35 lines, most of which are empty, didn't have the inputted pattern.
 
 **Example 2** 
 ```
@@ -179,7 +179,7 @@ $ grep -v "a" technical/biomed/1468-6708-3-1.txt > grep_results.txt
 $ wc grep_results.txt
       55      65     848 grep_results.txt
 ```
-The grep command with option -v displays lines that don't contain the pattern "a" from the 1468-6708-3-1.txt file. Using the wc command, we discovered that 55 lines didn't have the inputted pattern.
+The grep command with option -v displays lines that don't contain the pattern "a" from the 1468-6708-3-1.txt file. Using the wc command, we discovered that 55 lines, majority of which are empty, didn't have the inputted pattern.
 
 <br>
 
