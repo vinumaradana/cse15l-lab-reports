@@ -184,6 +184,7 @@ The grep command with option -v displays lines that don't contain the pattern "a
 <br>
 
 4. **-l option** displays list of file names only
+
 **Example 1** 
 ```
 $ grep -l "programming" technical/biomed/*  
