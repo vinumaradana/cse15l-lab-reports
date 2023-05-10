@@ -1,8 +1,8 @@
 ## **Lab Report 3**
 
-### The Grep Command
+## The Grep Command
 
-#### Basics
+### Basics
 The `grep` command stands for "**g**lobal search for **r**egular **e**xpression and **p**rint out". It searches a file for a particular pattern and displays all the lines that contain the pattern. The following is the syntax of the command:
 
 `grep [options] pattern [files]`
@@ -16,7 +16,7 @@ colleagues on the floor of the command center. In a brief moment of reflection, 
 The grep command searches the lines of `chapter-1.txt` file in the `911report` directory for the phrase "command center" and displays the lines with that pattern. In this case, there is one line in the text file that has this pattern.
 
 
-#### Command-Line Options
+### Command-Line Options
 
 Online, find 4 interesting command-line options or alternate ways to use the command you chose. For example, we saw the -name option for find in class. For each of those options, give 2 examples of using it on files and directories from ./technical. Show each example as a code block that shows the command and its output, and write a sentence or two about what it’s doing and why it’s useful.
 
