@@ -22,6 +22,8 @@ Online, find 4 interesting command-line options or alternate ways to use the com
 
 The `grep` command has various command-line options, but here are four important ones. To show how these options function, we will use files and directories from `./technical`.
 
+<br>
+
 1. -c option displays only a count of the lines that match a pattern
 
 **Example 1** 
@@ -37,6 +39,8 @@ $ grep -c "BMI" technical/biomed/1468-6708-3-1.txt*
 32
 ```
 There are 32 lines in 1468-6708-3-1.txt* file that matches the pattern "BMI". Therefore grep command with the -c option prints 32.
+
+<br>
 
 2. -i option ignores case sensitivity for matching.
 
@@ -65,9 +69,13 @@ $ grep -i "cardiovascular" technical/biomed/1468-6708-3-1.txt
 ```
 The first grep command displays two lines from 1468-6708-3-1.txt file as they match the pattern "cardiovascular" exactly, whereas the the second grep comand with the -i option displays five lines as it ignores case sensitivity. For example, -i option causes the command to display lines with "Cardiovascular" as it matches the pattern without considering the uppercase and lowercase letters. 
 
+<br>
+
 3. -v option displays all the lines that do not matches the pattern
 **Example 1** 
 **Example 2**
+
+<br>
 
 4. -l option displays list of file names only
 **Example 1** 
