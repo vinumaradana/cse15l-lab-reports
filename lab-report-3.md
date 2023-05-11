@@ -17,9 +17,6 @@ The grep command searches the lines of `chapter-1.txt` file in the `911report` d
 
 
 ### Command-Line Options
-
-Online, find 4 interesting command-line options or alternate ways to use the command you chose. For example, we saw the -name option for find in class. For each of those options, give 2 examples of using it on files and directories from ./technical. Show each example as a code block that shows the command and its output, and write a sentence or two about what it’s doing and why it’s useful.
-
 The `grep` command has various command-line options, but here are four important ones. To show how these options function, we will use files and directories from `./technical`.
 
 <br>
