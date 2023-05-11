@@ -236,7 +236,6 @@ technical/911report/chapter-9.txt
 The grep command with -l option displays all the file names of the files which contain the pattern "police" from the 911report directory.
 
 #### Cited Sources
-https://www.geeksforgeeks.org/grep-command-in-unixlinux/ <br>
-https://www.digitalocean.com/community/tutorials/grep-command-in-linux-unix
-
+“GREP Command in Unix/Linux.” GeeksforGeeks, 15 Nov. 2022, www.geeksforgeeks.org/grep-command-in-unixlinux/. <br>
+Pankaj. “GREP Command in Linux/Unix.” DigitalOcean, 3 Aug. 2022, www.digitalocean.com/community/tutorials/grep-command-in-linux-unix. 
 
