@@ -8,7 +8,7 @@ Keys pressed: <up><up><up><up><enter>, <up><up><up><up><enter> The javac -cp .:l
 
 Add this lab report to your Github Pages site, and submit a PDF of it as usual. The Lab Report 4 deadline is Monday, May 22 by 10pm.
 
-### Setup Delete any existing forks of the repository you have on your account
+#### Setup Delete any existing forks of the repository you have on your account
 ### Setup Fork the repository
 ### The real deal Start the timer!
 ### Log into ieng6
