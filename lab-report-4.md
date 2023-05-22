@@ -8,5 +8,13 @@ Keys pressed: <up><up><up><up><enter>, <up><up><up><up><enter> The javac -cp .:l
 
 Add this lab report to your Github Pages site, and submit a PDF of it as usual. The Lab Report 4 deadline is Monday, May 22 by 10pm.
 
-### Basics
-The `grep` command
+### Setup Delete any existing forks of the repository you have on your account
+### Setup Fork the repository
+### The real deal Start the timer!
+### Log into ieng6
+### Clone your fork of the repository from your Github account
+### Run the tests, demonstrating that they fail
+### Edit the code file to fix the failing test
+### Run the tests, demonstrating that they now succeed
+### Commit and push the resulting change to your Github account (you can pick any commit message!)
+### The `grep` command
