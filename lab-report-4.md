@@ -54,7 +54,7 @@ Then, I ran the following command to run the tests, which resulted in the output
 
 ![Image](lab7-6.png)
 
-### 6. Commit and push the resulting change to your Github account (you can pick any commit message!)
+### 6. Commit and push the resulting change to your Github account
 
 To do the last step, I typed the following, resulting in the output in the screenshot.
 ```
