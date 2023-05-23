@@ -12,7 +12,7 @@ To log into my ieng6 account, I just ran the following command and it automatica
 
 To access the link of the repository, I opened the lab7 link and forked it on GitHub. To clone my fork of the repository from my GitHub Account, I ran the following command, which includes the link I got after I forked the repository. 
 
-`$ git clone https://github.com/vinumaradana/lab7`
+`$ git clone https://github.com/vinumaradana/lab7 <enter>`
 
 ![Image](lab7-2.png)
 
@@ -21,8 +21,8 @@ To access the link of the repository, I opened the lab7 link and forked it on Gi
 To run the tests, I typed the following: 
 
 ```
-$ cd lab7
-$ bash test.sh
+$ cd lab7 <enter>
+$ bash test.sh <enter>
 ```
 
 I used `cd` command to access and go into the lab7 directory. Then, I ran the `bash` command, so `bash` ran the commands in the `test.sh` file. The output of running the tests is represented by the screenshot below.
@@ -48,9 +48,7 @@ The `\index` in the Command Mode searches for `index` pattern throughout the tex
 
 ### 5. Run the tests, demonstrating that they now succeed
 
-Then, I ran the following command to run the tests, which resulted in the output in the screenshot. All the tests now run successfully. 
-
-`bash test.sh`
+Then, I ran the `bash test.sh` command. It was two up the command history, so I used the up arrow to access it. Using this command, I ran the tests, which resulted in the output in the screenshot. All the tests now run successfully. 
 
 ![Image](lab7-6.png)
 
@@ -58,15 +56,15 @@ Then, I ran the following command to run the tests, which resulted in the output
 
 To do the last step, I typed the following, resulting in the output in the screenshot.
 ```
-$ git status
+$ git status <enter>
 $ git add ListExamples.java <enter>
-$ git commit -m "fix failing test"
-$ git push origin main
+$ git commit -m "fix failing test" <enter>
+$ git push origin main <enter>
 ```
 ![Image](lab7-7.png)
 
 I ran `git status` to check the state of the working directory and the staging area. This is an optional step. Then, I used `git add ListExamples.java` to add my change in the local working directory to the repository. Next, I used `git commit -m "fix failing test"` to commit the staged files and `"fix failing test"` as the message describing the commit. Lastly, I ran `git push origin main` to push the local branch to the repository. 
 
-Then I used `git status` to check the status of the repository after committing once. I received the following output. 
+Then I used `git status`, which was 4 up in the command history so I clicked the up arrow four times to access it, to check the status of the repository after committing once. I received the following output. 
 
 ![Image](lab7-8.png)
