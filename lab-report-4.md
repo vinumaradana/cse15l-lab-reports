@@ -10,7 +10,7 @@ To log into my ieng6 account, I just ran the following command and it automatica
 
 ### 2. Clone your fork of the repository from your Github account
 
-To access the link of the repository, I opened the lab7 link and forked it on GitHub. To clone my fork of the repository from my GitHub Account, I ran the following command. 
+To access the link of the repository, I opened the lab7 link and forked it on GitHub. To clone my fork of the repository from my GitHub Account, I ran the following command, which includes the link I got after I forked the repository. 
 
 `$ git clone https://github.com/vinumaradana/lab7`
 
