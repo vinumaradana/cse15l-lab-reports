@@ -21,7 +21,7 @@ To access the link of the repository, I opened the lab7 link and forked it on Gi
 To run the tests, I typed the following: 
 
 ```
-$ cd lab7 <enter>
+$ cd lab7
 $ bash test.sh
 ```
 
