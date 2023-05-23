@@ -48,7 +48,7 @@ The `\index` in the Command Mode searches for `index` pattern throughout the tex
 
 ### 5. Run the tests, demonstrating that they now succeed
 
-Then, I ran the `bash test.sh` command. It was two up the command history, so I used the up arrow to access it. Using this command, I ran the tests, which resulted in the output in the screenshot. All the tests now run successfully. 
+Then, I ran the `bash test.sh` command. It was two up the command history, so I used the clicked the up arrow twice to access it. Using this command, I ran the tests, which resulted in the output in the screenshot. All the tests now run successfully. 
 
 ![Image](lab7-6.png)
 
