@@ -25,10 +25,11 @@ $ cd lab7 <enter>
 $ bash test.sh
 ```
 
+I used `cd` command to access and go into the lab7 directory. Then, I ran the `bash` command, so `bash` ran the commands in the `test.sh` file. The output of running the tests is represented by the screenshot below.
+
+
 ![Image](lab7-3.png)
 
-
-I used `cd` command to access and go into the lab7 directory. Then, I ran the `bash` command, so `bash` ran the commands in the `test.sh` file. The output of running the tests is represented by the screenshot below.
 
 ### 4. Edit the code file to fix the failing test
  To fix the failing tests, I ran the `vim ListExamples.java` to edit the code file `ListExamples.java` in the `vim` text editor. This caused the `vim` text editor to open my file. 
