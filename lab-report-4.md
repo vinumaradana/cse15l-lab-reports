@@ -1,19 +1,50 @@
 ## Lab Report 4
 
-For the lab report this week, reproduce the task from above on your own. For each numbered step starting right after the timer (so steps 4-9), take a screenshot, and write down exactly which keys you pressed to get to that step. For special characters like <enter> or <tab>, write them in angle brackets with code formatting. Then, summarize the commands you ran and what the effect of those keypresses were.
+### 1. Log into ieng6
 
-For example, when you run the tests, you might want to use the up arrow or Ctrl-R to access your bash history rather than typing in the full command with classpath, etc. You might say something like this accompanying the screenshot for running the tests:
+To log into my ieng6 account, I just ran the following command and it automatically logged me in without prompting me for my password. 
 
-Keys pressed: <up><up><up><up><enter>, <up><up><up><up><enter> The javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java command was 4 up in the search history, so I used up arrow to access it. Then the java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ... command was 4 up in the history, so I accessed and ran it in the same way.
+`$ ssh cs15lsp23ik@ieng6.ucsd.edu`
 
-Add this lab report to your Github Pages site, and submit a PDF of it as usual. The Lab Report 4 deadline is Monday, May 22 by 10pm.
+### 2. Clone your fork of the repository from your Github account
 
-### 1. Setup Delete any existing forks of the repository you have on your account
-### 2. Setup Fork the repository
-### 3. The real deal Start the timer!
-### 4. Log into ieng6
-### 5. Clone your fork of the repository from your Github account
-### 6. Run the tests, demonstrating that they fail
-### 7. Edit the code file to fix the failing test
-### 8. Run the tests, demonstrating that they now succeed
-### 9. Commit and push the resulting change to your Github account (you can pick any commit message!)
+To access the link of the repository, I opened the lab7 link and forked it on GitHub. To clone my fork of the repository from my GitHub Account, I ran the following command. 
+
+`$ git clone https://github.com/vinumaradana/lab7`
+
+### 3. Run the tests, demonstrating that they fail
+
+To run the tests, I typed the following: 
+
+```
+$ cd lab7 <enter>
+$ bash test.sh
+```
+
+I used `cd` command to access and go into the lab7 directory. Then, I ran the `bash` command, so `bash` ran the commands in the `test.sh` file. The output of running the tests is represented by the screenshot below.
+
+### 4. Edit the code file to fix the failing test
+ To fix the failing tests, I ran the `vim ListExamples.java` to edit the code file `ListExamples.java` in the `vim` text editor. This caused the `vim` text editor to open my file. Then, I pressed the following keys to make the required change. 
+ 
+```
+\index <enter>
+n n n n n n n n n l l l l l l r 2 <esc> :wq
+```
+The `\index` in the Command Mode searches for `index` pattern throughout the text. I typed `n` 9 times to find the nineth occurence of `index` in the `ListExamples.java` and then, I typed `l` six times to go six spaces to the right. After, I typed `r`and then `2` which changed `index1` to `index2` since `r` replaces the current character with the character entered by the user. Then, I typed `<esc>` to return to Commnand Mode from Insert Mode and `:wq` to save and quit.
+
+### 5. Run the tests, demonstrating that they now succeed
+
+Then, I ran the following command to run the tests, which resulted in the output in the screenshot.
+
+`bash test.sh`
+
+### 6. Commit and push the resulting change to your Github account (you can pick any commit message!)
+
+To do the last step, I typed the following, resulting in the output in the screenshot.
+```
+$ git status
+$ git add ListExamples.java <enter>
+$ git commit -m "fix failing test"
+$ git push origin main
+$ git status
+```
