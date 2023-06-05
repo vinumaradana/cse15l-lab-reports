@@ -32,7 +32,7 @@ I used `cd` command to access and go into the lab7 directory. Then, I ran the `b
 
 
 ### 4. Edit the code file to fix the failing test
- To fix the failing tests, I ran the `vim ListExamples.java` to edit the code file `ListExamples.java` in the `vim` text editor. This caused the `vim` text editor to open my file. 
+ To fix the failing tests, I typed `vim ListExamples.java <enter>` to edit the code file `ListExamples.java` in the `vim` text editor. This caused the `vim` text editor to open my file. 
  
  ![Image](lab7-4.png)
 
