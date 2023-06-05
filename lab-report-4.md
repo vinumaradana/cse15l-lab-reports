@@ -48,7 +48,7 @@ The `\index` in the Command Mode searches for `index` pattern throughout the tex
 
 ### 5. Run the tests, demonstrating that they now succeed
 
-Then, I ran the `bash test.sh` command. It was two up the command history, so I used the clicked the up arrow twice to access it. Using this command, I ran the tests, which resulted in the output in the screenshot. All the tests now run successfully. 
+Then, I ran the `bash test.sh` command. It was two up the command history, so I used the typed `j j` or clicked up arrow twice to access it. Using this command with `<enter>`, I ran the tests, which resulted in the output in the screenshot. All the tests now run successfully. 
 
 ![Image](lab7-6.png)
 
@@ -65,6 +65,6 @@ $ git push origin main <enter>
 
 I ran `git status` to check the state of the working directory and the staging area. This is an optional step. Then, I used `git add ListExamples.java` to add my change in the local working directory to the repository. Next, I used `git commit -m "fix failing test"` to commit the staged files and `"fix failing test"` as the message describing the commit. Lastly, I ran `git push origin main` to push the local branch to the repository. 
 
-Then I used `git status`, which was 4 up in the command history so I clicked the up arrow four times to access it, to check the status of the repository after committing once. I received the following output. 
+Then I used `git status`, which was 4 up in the command history so I typed `j j j j` or clicked up arrow four times to access it and pressed `<enter>`, to check the status of the repository after committing once. I received the following output. 
 
 ![Image](lab7-8.png)
