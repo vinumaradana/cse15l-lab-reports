@@ -8,10 +8,13 @@ The file and directory structure:
 ![image](https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/f6126154-a78d-4087-9087-5ef32db50e47)
 
 The content of `ArraySort.java` file: 
-<img width="837" alt="Screenshot 2023-06-05 at 8 12 08 PM" src="https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/ac009229-7bf2-452a-a4fe-6987946ae7ce">
+![image](https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/ac009229-7bf2-452a-a4fe-6987946ae7ce)
 
 The content of `ArrayTests.java` file:
-<img width="839" alt="Screenshot 2023-06-05 at 8 12 22 PM" src="https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/d46cb1ce-4ceb-4edc-9421-630aa34c773c">
+![image](https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/d46cb1ce-4ceb-4edc-9421-630aa34c773c)
+
+The content of the bash script:
+![image](https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/498743b5-f76e-454c-8a30-16e9546340b8)
 
 
 **Post in EdStem: Student's Bug**
