@@ -10,7 +10,7 @@ For this lab report, I created my code from scratch. I created two files, `Array
 ![image](https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/67acc6eb-6cf0-4032-b401-08ca7b7de9f1)
 
 ### TA's Response
-The output indicates there is an error in the logic of the sorting algorithm and thus, the values are not swapping properly. What part of the code could you alter to resolve this issue of incorrect swapping?
+The output indicates there is an error in the logic of the sorting algorithm. The values are not swapping correctly- what part of the code could you alter to resolve this issue?
 
 ### Student's Reflection
 According to the previous output, two tests failed. First one failed because `arrays first differed at element [2]; expected:<4> but was:<1>` while the other one failed because `arrays first differed at element [1]; expected:<2> but was:<1>`. This shows that I didn't swap the values properly. After further examination, I realized that my lines 9 and 10 are in the wrong order. In this order, `temp` is storing the new value of `arr[i]` rather it's initial value. And, thus `arr[j]` is storing the new value of `arr[i]`, which is `arr[j]` itself. Thus, in this code, `arr[i]` and `arr[j]` have the same value. 
