@@ -3,56 +3,45 @@
 ### Part 1 – Debugging Scenario
 For this lab report, I created my code from scratch. I created two files, `ArraySort.java` and `ArrayTests.java`, and a bash script, `test.sh`.
 
-The following is the file and directory structure:
-
-![image](https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/f6126154-a78d-4087-9087-5ef32db50e47)
-
 **Post in EdStem: Student's Bug**
-
-*What environment are you using (computer, operating system, web browser, terminal/editor, and so on)?*
-
-macOS (operating system); VScode (editor); Chrome (browser) 
-
-*Detail the symptom you're seeing. Be specific; include both what you're seeing and what you expected to see instead. Screenshots 
-are great, copy-pasted terminal output is also great. Avoid saying “it doesn't work”.*
-
-After running the `bash test.sh ArrayTests`, I recieved the following output:  
-![image](https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/80444a56-30ba-4918-b43f-7916b93320a8)
-
-One test is failing because of an Index Out of Bounds error. However, all the test cases are expected to pass. The arrays sorted using my sort() method should match the ones that are sorted by the built-in sorting algorithm. 
-
-*Detail the failure-inducing input and context. That might mean any or all of the command you're running, a test case, command-line arguments, working directory, even the last few commands you ran. Do your best to provide as much context as you can.*
-
-The following are the contents of my files and my bash script:
-
-The content of `ArraySort.java` file: 
-![image](https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/ac009229-7bf2-452a-a4fe-6987946ae7ce)
-
-The content of `ArrayTests.java` file:
-![image](https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/d46cb1ce-4ceb-4edc-9421-630aa34c773c)
-
-The content of the bash script used to run the tests in `ArrayTests.java` 
-![image](https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/498743b5-f76e-454c-8a30-16e9546340b8)
+![image](https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/d5b04e64-5beb-4c51-916a-9f21a3dd1bfc")
+![image](https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/8210ce92-8e8c-402c-b6da-002ec35012af)
+![image](https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/c305da42-3c9d-441d-9a38-1a8b2959cd44)
+![image](https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/67acc6eb-6cf0-4032-b401-08ca7b7de9f1)
 
 **TA's Response**
-What part of your code could lead to an Index Out of Bounds error? Hint: Check the line number where the error resulted in. More specifically, which part of the for loop involves the index?
+The error indicates there is an error in the logic of the sorting algorithm and thus, the values are not swapping properly. Thus, what part of the code could you alter to resolve this issue?
 
 **Student's Reflection**
 Another screenshot/terminal output showing what information the student got from trying that, and a clear description of what the bug is.
 
-According to the previous output, the error originated in line number 9, which compares the numbers located in indices `i` and `j` in `arr`. Then, I looked more closely at the for loops and realized the bug was a typo in the inner for loop header. I wrote `i < arr.length` instead of `j < arr.length`. This resulted the `i` to be 1 greater than it's supposed to be, causing an Index Out of Bounds error when calling `arr[i]`.
+According to the previous output, two tests failed. First one failed because `arrays first differed at element [2]; expected:<4> but was:<1>` while the other one failed because `arrays first differed at element [1]; expected:<2> but was:<1>`. This shows that I didn't swap the values properly. After further examination, I realized that my lines 9 and 10 are in the wrong order. In this order, `temp` is storing the new value of `arr[i]` rather it's initial value. And, thus `arr[j]` is storing the new value of `arr[i]`, which is `arr[j]` itself. Thus, in this code `arr[i]` and `arr[j]` store the same value. 
 
-![image](https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/e0c1d45c-3341-4bb9-ad1a-37718feb73bf)
+To fix this, we need to swap lines 9 and 10 so that `temp` stores the initial value of `arr[i]` and the swapping occurs properly. After we resolved the bug, the following is the output. The output matches our expected output. 
+
+![image](https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/99329e55-412f-4300-8889-c1e07aba0916)
+
 
 
 At the end, all the information needed about the setup including:
-The file & directory structure needed
-The contents of each file before fixing the bug
-The full command line (or lines) you ran to trigger the bug
-A description of what to edit to fix the bug
 
+The following is the file and directory structure:
+![image](https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/f6126154-a78d-4087-9087-5ef32db50e47)
+
+The content of `ArraySort.java` file: 
+![image](https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/615def05-7eba-4bd4-a433-b10ff45a8054)
+
+The content of `ArrayTests.java` file:
+![image](https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/5b84ac13-e54b-45b9-89eb-a5f21b8ab3a0)
+
+The content of the bash script used to run the tests in `ArrayTests.java` 
+![image](https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/498743b5-f76e-454c-8a30-16e9546340b8)
+
+The full command line (or lines) you ran to trigger the bug:
+`bash test.sh ArrayTests`
+
+Description of what to edit to fix the bug:
+Swap the lines 9 and 10 in the `ArraySort.java` file. So, the `temp` stores the initial value of `arr[i]` rather than the new value of `arr[i]`.
 
 ### Part 2 – Reflection
-In a couple of sentences, describe something you learned from your lab experience in the second half of this quarter that you didn’t know before. It could be a technical topic we addressed specifically, something cool you found out on your own building on labs, something you learned from a tutor or classmate, and so on. It doesn’t have to be specifically related to a lab writeup, we just want to hear about cool things you learned!
-
-Something cool I learned from my lab experience is how the autograder, which grades our PAs in our other classes, is created and why it works the way it does. It was interesting to see how the skills we learned in this class, including commands, vim and bash script, can be applied to create something like an autograder. 
+Something cool I learned from my lab experience is how the autograder, which grades our PAs in our other classes, is created and why it works the way it does. It was interesting to see how the skills we learned in this class, including commands, vim and bash script, can be applied to create something like an autograder.
