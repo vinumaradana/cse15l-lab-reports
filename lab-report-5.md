@@ -22,10 +22,13 @@ To fix this bug, we need to swap lines 9 and 10 so that `temp` stores the initia
 ### Summary of all the Information
 The following is the file and directory structure:
 ![image](https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/f6126154-a78d-4087-9087-5ef32db50e47)
+
 The content of `ArraySort.java` file: 
 ![image](https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/615def05-7eba-4bd4-a433-b10ff45a8054)
+
 The content of `ArrayTests.java` file:
 ![image](https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/5b84ac13-e54b-45b9-89eb-a5f21b8ab3a0)
+
 The content of the bash script used to run the tests in `ArrayTests.java` 
 ![image](https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/498743b5-f76e-454c-8a30-16e9546340b8)
 
