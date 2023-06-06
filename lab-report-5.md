@@ -1,7 +1,7 @@
 ## Lab Report 5
 
 ### Part 1 – Debugging Scenario
-For this lab report, I created my code from scratch. I created two files, `ArraySort.java` and `ArrayTests.java`, and a bash script, `test.sh`.
+For this lab report, I created my code from scratch. I created two files, `ArraySort.java` and `ArrayTests.java`, and a bash script, `test.sh`. The `ArraySort.java` file consists of a method that aims to sort the inputted array, while the `ArrayTests.java` consists of tests that check the functionality of `ArraySort.java`.
 
 ### Post in EdStem: Student's Bug
 
