@@ -1,7 +1,18 @@
 ## Lab Report 5
 
 ### Part 1 – Debugging Scenario
-Design a debugging scenario in the spirit and style of the ones above. Write your report as a conversation on EdStem. It should have:
+For this lab report, I created my code from scratch. I created two files, `ArraySort.java` and `ArrayTests.java`, and a bash script, `test.sh`.
+
+The file and directory structure: 
+
+![image](https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/f6126154-a78d-4087-9087-5ef32db50e47)
+
+The content of `ArraySort.java` file: 
+<img width="837" alt="Screenshot 2023-06-05 at 8 12 08 PM" src="https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/ac009229-7bf2-452a-a4fe-6987946ae7ce">
+
+The content of `ArrayTests.java` file:
+<img width="839" alt="Screenshot 2023-06-05 at 8 12 22 PM" src="https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/d46cb1ce-4ceb-4edc-9421-630aa34c773c">
+
 
 **Post in EdStem: Student's Bug**
 The original post from a student with a screenshot showing a symptom and a description of a guess at the bug/some sense of what the failure-inducing input is. (Don’t actually make the post; just write the content that would go in such a post.) A template of the format of the post can be found by clicking “New Thread” -> Question -> Debugging on EdStem.
@@ -11,10 +22,6 @@ Image
 macOS (operating system); VScode (editor); Chrome (browser) 
 
 *Detail the symptom you're seeing. Be specific; include both what you're seeing and what you expected to see instead. Screenshots are great, copy-pasted terminal output is also great. Avoid saying “it doesn't work”.*
-
-The file and directory structure: 
-
-![image](https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/f6126154-a78d-4087-9087-5ef32db50e47)
 
 
 
