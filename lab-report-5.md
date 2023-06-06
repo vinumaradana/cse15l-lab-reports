@@ -8,14 +8,16 @@ The following is the file and directory structure:
 ![image](https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/f6126154-a78d-4087-9087-5ef32db50e47)
 
 **Post in EdStem: Student's Bug**
+
 *What environment are you using (computer, operating system, web browser, terminal/editor, and so on)?*
+
 macOS (operating system); VScode (editor); Chrome (browser) 
 
-*Detail the symptom you're seeing. Be specific; include both what you're seeing and what you expected to see instead. Screenshots are great, copy-pasted terminal output is also great. Avoid saying “it doesn't work”.*
-
+*Detail the symptom you're seeing. Be specific; include both what you're seeing and what you expected to see instead. Screenshots 
+are great, copy-pasted terminal output is also great. Avoid saying “it doesn't work”.*
 
 After running the `bash test.sh ArrayTests`, I recieved the following output:  
-![image](Screenshot 2023-06-05 at 8 20 00 PM" src="https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/80444a56-30ba-4918-b43f-7916b93320a8")
+![image](https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/80444a56-30ba-4918-b43f-7916b93320a8)
 
 One test is failing because of an Index Out of Bounds error. However, all the test cases are expected to pass. The arrays sorted using my sort() method should match the ones that are sorted by the built-in sorting algorithm. 
 
@@ -40,6 +42,8 @@ Another screenshot/terminal output showing what information the student got from
 
 According to the previous output, the error originated in line number 9, which compares the numbers located in indices `i` and `j` in `arr`. Then, I looked more closely at the for loops and realized the bug was a typo in the inner for loop header. I wrote `i < arr.length` instead of `j < arr.length`. This resulted the `i` to be 1 greater than it's supposed to be, causing an Index Out of Bounds error when calling `arr[i]`.
 
+![image](https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/e0c1d45c-3341-4bb9-ad1a-37718feb73bf)
+
 
 At the end, all the information needed about the setup including:
 The file & directory structure needed
@@ -47,7 +51,6 @@ The contents of each file before fixing the bug
 The full command line (or lines) you ran to trigger the bug
 A description of what to edit to fix the bug
 
-You should actually set up and run the scenario from your screenshots. It should involve at least a Java file and a bash script. Describing the bug should involve reading some output at the terminal resulting from running one or more commands. Design an error that produces more interesting output than a single message about a syntax or unbound identifier error – showcase some interesting wrong behavior! Feel free to set this up by cloning and breaking some existing code like the grading script or code from class, or by designing something of your own from scratch, etc.
 
 ### Part 2 – Reflection
 In a couple of sentences, describe something you learned from your lab experience in the second half of this quarter that you didn’t know before. It could be a technical topic we addressed specifically, something cool you found out on your own building on labs, something you learned from a tutor or classmate, and so on. It doesn’t have to be specifically related to a lab writeup, we just want to hear about cool things you learned!
