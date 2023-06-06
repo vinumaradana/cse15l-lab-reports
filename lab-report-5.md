@@ -3,17 +3,17 @@
 ### Part 1 – Debugging Scenario
 For this lab report, I created my code from scratch. I created two files, `ArraySort.java` and `ArrayTests.java`, and a bash script, `test.sh`.
 
-#### Post in EdStem: Student's Bug
+### Post in EdStem: Student's Bug
 
 ![image](https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/d5b04e64-5beb-4c51-916a-9f21a3dd1bfc")
 ![image](https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/8210ce92-8e8c-402c-b6da-002ec35012af)
 ![image](https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/c305da42-3c9d-441d-9a38-1a8b2959cd44)
 ![image](https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/67acc6eb-6cf0-4032-b401-08ca7b7de9f1)
 
-#### TA's Response
+### TA's Response
 The error indicates there is an error in the logic of the sorting algorithm and thus, the values are not swapping properly. Thus, what part of the code could you alter to resolve this issue?
 
-#### Student's Reflection
+### Student's Reflection
 Another screenshot/terminal output showing what information the student got from trying that, and a clear description of what the bug is.
 
 According to the previous output, two tests failed. First one failed because `arrays first differed at element [2]; expected:<4> but was:<1>` while the other one failed because `arrays first differed at element [1]; expected:<2> but was:<1>`. This shows that I didn't swap the values properly. After further examination, I realized that my lines 9 and 10 are in the wrong order. In this order, `temp` is storing the new value of `arr[i]` rather it's initial value. And, thus `arr[j]` is storing the new value of `arr[i]`, which is `arr[j]` itself. Thus, in this code `arr[i]` and `arr[j]` store the same value. 
