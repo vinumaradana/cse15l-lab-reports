@@ -29,7 +29,7 @@ The content of `ArraySort.java` file:
 The content of `ArrayTests.java` file:
 ![image](https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/5b84ac13-e54b-45b9-89eb-a5f21b8ab3a0)
 
-The content of the bash script used to run the tests in `ArrayTests.java` 
+The content of the bash script used to run the tests in `ArrayTests.java` file:
 ![image](https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/498743b5-f76e-454c-8a30-16e9546340b8)
 
 The full command line (or lines) I ran to trigger the bug:
