@@ -13,6 +13,7 @@ macOS (operating system); VScode (editor); Chrome (browser)
 *Detail the symptom you're seeing. Be specific; include both what you're seeing and what you expected to see instead. Screenshots are great, copy-pasted terminal output is also great. Avoid saying “it doesn't work”.*
 
 The file and directory structure: 
+
 ![image](https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/f6126154-a78d-4087-9087-5ef32db50e47)
 
 
