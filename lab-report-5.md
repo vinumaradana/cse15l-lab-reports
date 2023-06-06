@@ -19,8 +19,7 @@ To fix this, we need to swap lines 9 and 10 so that `temp` stores the initial va
 ![image](https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/99329e55-412f-4300-8889-c1e07aba0916)
 
 
-At the end, all the information needed about the setup including:
-
+### Summary of all the Information
 The following is the file and directory structure:
 ![image](https://github.com/vinumaradana/cse15l-lab-reports/assets/127369782/f6126154-a78d-4087-9087-5ef32db50e47)
 
